@@ -1,0 +1,19 @@
+Andrew P Talbot 1434667
+
+Weekly Log 6 : Week commencing 23 July 2018
+
+	This was a challenging week: 
+	
+	I managed to get the M/Z viewer working well, and is stable now.
+
+	I implemented Self Organising Maps into KNIME.
+
+	I tried to implement Normalised Cuts algorithm into KNIME. However, I had some trouble here as the algorithm was confusing.
+
+	Same here with the ToMaTo implementation, I struggled here due to the code being in C++, and my unfamiliarity with this language.
+
+
+	Next week : I must implement these two clustering algorithms and then move onto some experimental work.
+
+Next Meeting : Monday 30th July 2018: 9:30
+

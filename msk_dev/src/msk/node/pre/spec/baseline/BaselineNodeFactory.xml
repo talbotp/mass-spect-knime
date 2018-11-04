@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./msk_logo-1.png" type="Manipulator" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd"> 
+    <name>Baseline Subtraction</name>   
+   
+    <shortDescription>
+   		Use this node to perform baseline subtraction to remove baseline noise from the spectra.
+    </shortDescription>     
+    <fullDescription>
+        <intro>
+        	This node is useful to subtract baseline noise from mass spectra, supports multiple types of baseline subtraction.
+        	For each row in the input data, we calculate the baseline for windows across the whole spectra, then remove the baseline value from all values in that given window.
+        	Once this is done, we remove all negative values and set them equal to zero.
+        </intro>      
+            
+        <tab name="Baseline Type">
+            <option name="Minimum">
+            	If chosen, the baseline is calculated as the minimum of the values in each window.
+            </option>
+           	<option name="Median">
+           		If chosen, the baseline is calculated as the median in each window.
+           	</option>
+           	<option name="Tophat">    
+           		If chosen, the baseline is calculated as the morphological operator tophat of the values in the window. 
+           		This means the opening, which refers to the dilation of the erosion.
+           	</option>
+           	<option name="Optimal Tophat">    
+           		If chosen, the baseline is calculated using morphological operators. Specifically, 
+           		it is the minimum of the opening, and the average between the dilation of the opening, and the erosion of the opening.
+           		As explained by Roasanna Perez-Pueyo, Maria Jose Soneira and Sergio Ruiz-Moreno in Morphology-Based Automated Baseline Removal for Raman Spectra of Artistic Pigments.	
+           	</option>
+        </tab>
+        
+       	<option name="Window Size/Structuring Element">
+       		This refers to the size of the window that we use when calculating the baseline at a specific point. 
+       		This could have several different effects on the resulting baseline, depending on the baseline removal method that is chose.
+       	</option>
+    </fullDescription>
+
+    <ports>
+        <inPort index="0" name="Intensity Rows">
+			Rows of data that we wish to remove the baseline from. Typically, this will be mass spectrometry intensity data.
+		</inPort>
+		
+        <outPort index="0" name="Baseline Values">
+        	This port outputs the baselines calculated for each row of incoming data.
+        </outPort>
+        <outPort index="1" name="Baseline Subtracted Data">
+        	This port outputs the original data with the baseline subtracted.
+        </outPort>      
+    </ports>    
+
+</knimeNode>

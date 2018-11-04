@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./msk_logo-1.png" type="Visualizer" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>m/z Channel Viewer</name>
+    
+    <shortDescription>
+        This node allows for grayscale visualization of several m/z channels in MSI datasets.
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>
+			This node is used for grayscale visualizations of m/z channels and their intensities.
+			
+			It scales the intensites to a colour between black and white, white being the most intense, and black being zero.
+			
+			The node allows the user to view a single m/z, or the average intensities across multiple channels. 
+			Furthermore, the user can specify whether the maximum intensity is across the whole dataset, or across the considered m/z.
+		</intro>
+		
+		<option name="Single m/z or Range">
+        	Choose whether we draw a single m/z channel or the average intensities across a whole range.
+        </option>       
+        <option name="Minimum m/z">
+        	Specify the minimum m/z to be considered in the visualization.
+        </option>
+        <option name="Maximum m/z">
+        	Specify the maximum m/z to be considered in the visualization.
+        </option>
+        <option name="Maximum Intensity Value">
+        	Choose local for the intensities to be scaled to the largest intensity in the considered m/z channel.
+        	Choose global for the intensities to be scaled to the largest intensity in the entire incoming tables.
+        </option>
+        <option name="Image Width">
+        	The desired image width of the output visualization.
+        </option>
+        <option name="Image Height">
+        	The desired image height of the output visualization.
+        </option>
+    </fullDescription>
+    
+	<ports>
+        <inPort index="0" name="Combined m/z and Intensity Data">
+       		The incoming data should contain rows of intensities of the spectra.
+       		The data should be combined so that the rows of the data are the intensities for a single spectra.
+       		The column names are the m/z channels.
+        </inPort>
+    </ports> 
+    
+    <views>
+    	<view index="1" name="m/z Channel View">
+    		View the output grayscale m/z channel for the given dataset.
+    	</view>
+    </views>
+</knimeNode>

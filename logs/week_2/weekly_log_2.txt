@@ -1,0 +1,41 @@
+Andrew P Talbot 1434667
+
+Weekly Log 1: Week commencing Monday 25th June 2018
+
+This week:
+	
+
+	Goals:
+		- Create a node so that we may read in imzML data into KNIME.
+		- Strategise on how to read in data, perhaps a good way would be to leave it as an option to the user, to choose from spectrum at a time or image at a time.
+		- Document a few othe methods I will be implementing in the future.
+		- Have clear concise documentation for the reading node I will create.
+	
+
+	Done:
+		- Made a node which can read in continuous imzML data into KNIME.
+		- Started working on a node which reads in imzML data into KNIME in chunks.
+		- Began thinking of a few methods that I will aim to implement in the coming weeks.
+	
+	
+	Methods that I am interested in implementing are:
+		- Mean spectrum calculator		
+		- ion image generation. (perhaps it is not easily done to load all images into KNIME at once as i first thought)
+		- Memory efficient PCA on spectrum.
+		- Savitzky-Golay smoothing
+		- Rebinning, should this be a part of a node that reads data or a new node?
+		- Normalising
+		- k-means clustering. (all manner of clustering algorithms for comparisons in the next part of the project.)
+
+
+	Challenges: 
+		- Had a few issues with Eclipse at the start of the week which slowed  me down a little. In particular with the build path and trying to export projects.
+		- I am unable to Spectrum.getmzArray() or spectrum.getIntensityArray(), this has caused me issued when I try to load in processed datasets. I still need to work out a solution for this.
+		- Need to figure out how the best way to implement Regions of Interest in the dataset would be (trivially could just place limits on the width and the height of the dataset).
+		- Must ask whether I should set out the DataTables so that it can be used by other KNIME nodes, or will most of the processing be done by my node.
+
+
+	Next Week Goals:
+		- On the weekend refactor the java classes, in particular the util package needs to be heavily updated.
+		- Will need to fully implement all of the reading and limiting m/z nodes
+		- Will perhaps look into creating a loop end node which doesn’t save all of the data that we input through the Chunk Reader.

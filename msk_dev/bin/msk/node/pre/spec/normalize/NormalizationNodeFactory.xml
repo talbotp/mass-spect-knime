@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./msk_logo-1.png" type="Manipulator" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>Normalizer</name>
+    
+    <shortDescription>
+        We use this node to Normalize rows of data in several different ways specified by the user.
+        This node is targeted towards the processing of mass spectrometry data.
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>
+       		This node is useful for normalizing mass spectrometry intensities. It supports 3 methods of normalization.
+        </intro>
+        
+        <option name="TIC">
+       		This is the industry standard in normalization of MSI data, specifically, it calculates the Total Ion Count, ie the sum of the intensities. 
+       		Then we divide each intensity in that spectrum by its TIC.
+        </option>
+        <option name="Median">
+        	This method of normalization is simple and is gaining popularity in MSI. We simply calculate the median intensity for a spectrum.
+        	Then we divide each intensity value by this.
+        </option>
+		<option name="Euclidean Norm">
+			This method of Normalization involves calculating the Euclidean Norm of the intensities of our Mass spectrometry data.
+			Then we divide each intensity value by this.
+		</option>  
+    </fullDescription>
+    
+    <ports>
+        <inPort index="0" name="Intensity Rows">
+       		The incoming data should contain rows of data that are to be independently normalized.
+        </inPort>
+        
+        <outPort index="0" name="Normalized Intensity Rows">
+        	The outgoing data consists of the normalized incoming data.
+        </outPort>
+    </ports>    
+</knimeNode>

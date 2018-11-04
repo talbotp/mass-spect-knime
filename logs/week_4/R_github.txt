@@ -1,0 +1,6 @@
+https://github.com/zeehio/msProcess/tree/master/R
+VERY USEFUL GITHUB WITH LOADS OF MASS SPECT METHODS in R
+
+
+USEFUL WEBSITE TOO 
+http://www.sc.ehu.es/ccwbayes/members/ruben/ms/node5.html

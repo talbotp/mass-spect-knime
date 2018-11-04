@@ -1,0 +1,12 @@
+
+{
+    "type":"object",
+    "properties":{
+        "string-input-4":{
+            "type":"string",
+            "default":"",
+            "description":"Enter Description",
+            "example":""
+        }
+    }
+}

@@ -1,0 +1,33 @@
+KNIME NOTES:
+
+How can I structure the Knime node so that it will work with a MVC style of GUI - and with the KNIME client.
+
+	1) Perhaps a good idea to create a class containing the logic and algorithms required for the program.
+
+	2) Next, it may be a good idea to Create The appropriate KNIME nodes and simply import the logic and call methods from the class with the logic.
+
+Perhaps I should make the plugin a separate category on its own.
+
+
+REQUIRED:
+
+	PROVIDED BY THE EXTENSION WIZARD:
+	- plugin.xml
+	- build.properties
+
+	FOR EACH NODE:
+	- NodeFactory, NodeModel
+	- NodeFactory.xml
+	- NodeDialogPane, NodeView (optional)
+
+NOTES:
+NodeFactory bundles the NodeModel, NodeDialog, NodeView, and description XML.
+
+NodeDialog is for a node that requires special user settings as input. Use DefaultComponent to create simple, quick user input.
+
+Should I make a node for each possible method and package it into a category?
+
+ 
+
+
+	

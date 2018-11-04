@@ -1,0 +1,22 @@
+Andrew P Talbot 1434667
+
+Weekly Log 4 : Week commencing 9 July 2018
+
+This Week:
+
+	Goals:
+	- Fully implement all preprocessing nodes.
+
+	Done: 
+	- Baseline and normalisation nodes.
+	- Had some trouble with peak detection etc nodes.
+
+	- Found a lot of good papers on signal / spectra preprocessing.
+
+	Challenges:
+	- Peak detection nodes and generally finding actual algorithms can be quite challenging.
+
+	Next Week goals:
+	- Finish off all documentation and visualisation of the data within KNIME.
+
+	- Then we can move onto the other part of the project. :)

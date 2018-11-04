@@ -1,0 +1,59 @@
+Andrew P Talbot 1434667
+
+Here is the log of all meetings, just so that I can aim to remember everything regarding the project.
+
+
+Meeting 1 : 15 June 2018
+	- Project was initially explained, split into two peices, developing a KNIME category
+		for analytics of Mass Sepctrometry Data, the other part is exploring topological
+		approaches to Clustering.
+	- Given some papers to read and to familiarise myself with KNIME, and think about structuring the project.
+	- Create a project proposal.
+	
+
+Meeting 2 : 21 June 2018
+	- Talked more in depth about the KNIME noding part of the project. 
+	- Given an imzML dataset and parser, so that I can create a KNIME node which is able to load an imzML dataset.
+		NB: must look into strategies which allow us to load in a dataset, perhaps it would be a good idea to allow
+		the user to choose the strategy for loading the imzML.
+		Methods : spectrum at a time, ROI (Regions of Interest ) etc.
+	- Define some software engineering for the project, requirements and any appropriate UML etc.
+
+
+Meeting 3 : 28 June 2018
+	- Talked about what i’ve been doing with regards to KNIME. 
+	- Aim to fully implement and document nodes for reading in datasets, and ion images.
+
+
+Meeting 4 : 3 July 2018
+	- Showed the working reading nodes.
+	- Aim to catalogue methods to be implemented into the plugin.
+	- Add these to metanodes.
+	- Have a complete workflow from preprocessing to k-means.
+
+Meeting 5 : 10 July 2018
+	- Showed the nodes I have created, and some of the issues I am having.
+	- Aim to implement all preprocessing nodes by next meeting.
+
+Meeting 6 : 17 July 2018
+	- Showed my collection of preprocessing nodes that I have implemented.
+	- Told not to worry about peak detection / peak alignment as we will create a good peak detection/ alignment algorithm in the future part of the project.
+	- Aim to implement spectrum and image views of single spectra/images. by the next meeting.
+	- Given a tutorial on topology and some topology papers to read and understand.
+	- Finish software side of things for the next meeting.
+
+Meeting 7 : 24 July 2018
+	- Showed spectral viewing in KNIME.
+	- Showed concepts for viewing m/z channels, which I struggled to implement.
+	- Recommended for now to use Grayscale for images, with an option to choose a max value for grayscale from the total data cube, or to use the max value in a m/z channel.
+	- Talked about 4 method of clustering, which the first port of call is to get them running in KNIME. k-means, DBSCAN, Normalised Cuts, and Tomato.
+	- Then we need to test their effectiveness.
+	- To cluster, we have m/z channels as columns (data attributes), and then the rows are the pixel values.
+
+Meeting 7 : 30 July 2018
+	- Showed the M/Z Viewer. 
+	- Discussed the trouble I was having with implementing ToMaTo and Normalised Cuts. Next, I will have to implement these two methods and get them working before moving onto some more experimental work.
+	- Next meeting will be chosen after I have managed to implement Normalised Cuts etc.
+
+
+	

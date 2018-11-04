@@ -1,0 +1,416 @@
+
+{
+    "version":"3.5.3.v201804031105",
+    "created":"2018-08-29 18:26",
+    "nodestats":{
+        "nodes":[
+            {
+                "id":"msk.node.read.imzML.full.rowSpec.ImzMLReaderRowSpectrumNodeFactory#ImzML Reader",
+                "nrexecs":19,
+                "nrfails":6,
+                "exectime":165231,
+                "nrcreated":13,
+                "successor":"msk.node.util.combiner.CombinerNodeFactory#Combine m/z and Intensity"
+            },
+            {
+                "id":"msk.node.read.imzML.loop.rowSpec.ImzMLChunkReaderRowSpectrumNodeFactory#ImzML Reader Loop Start",
+                "nrexecs":8892,
+                "nrfails":11,
+                "exectime":358948,
+                "nrcreated":24,
+                "successor":"msk.node.util.combiner.CombinerNodeFactory#Combine m/z and Intensity"
+            },
+            {
+                "id":"msk.node.util.combiner.CombinerNodeFactory#Combiner",
+                "nrexecs":4909,
+                "nrfails":0,
+                "exectime":23421,
+                "nrcreated":10,
+                "successor":"org.knime.base.node.meta.looper.LoopEndNodeFactory#Loop End"
+            },
+            {
+                "id":"org.knime.base.node.meta.looper.LoopEnd2NodeFactory#Loop End (2 ports)",
+                "nrexecs":2711,
+                "nrfails":0,
+                "exectime":55288,
+                "nrcreated":8,
+                "successor":"msk.node.viz.spectrum.compare.SpectrumCmpViewNodeFactory#Spectrum Visualizer (Compare)"
+            },
+            {
+                "id":"org.knime.base.node.viz.table.TableNodeFactory#Interactive Table",
+                "nrexecs":158,
+                "nrfails":0,
+                "exectime":1632,
+                "nrcreated":51,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.flowvariable.createfilename.CreateFilenameNodeFactory#Create File Name",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"msk.node.read.imzML.loop.rowSpec.ImzMLChunkReaderRowSpectrumNodeFactory#ImzML Reader Loop Start"
+            },
+            {
+                "id":"org.knime.base.node.flowvariable.injectvariables.InjectVariablesNodeFactory#Inject Variables (Data)",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.js.base.node.quickform.input.string.StringInputQuickFormNodeFactory#String Input",
+                "nrexecs":7,
+                "nrfails":0,
+                "exectime":63,
+                "nrcreated":1,
+                "successor":"msk.node.read.imzML.loop.rowSpec.ImzMLChunkReaderRowSpectrumNodeFactory#ImzML Reader Loop Start"
+            },
+            {
+                "id":"msk.node.pre.spec.normalize.NormalizationNodeFactory#Normalizer",
+                "nrexecs":4587,
+                "nrfails":25,
+                "exectime":52877,
+                "nrcreated":9,
+                "successor":"org.knime.base.node.meta.looper.LoopEnd2NodeFactory#Loop End (2 ports)"
+            },
+            {
+                "id":"org.knime.base.node.io.tablecreator.TableCreator2NodeFactory#Table Creator",
+                "nrexecs":234,
+                "nrfails":0,
+                "exectime":4949,
+                "nrcreated":10,
+                "successor":"org.knime.base.node.viz.hilite.AutoHiLiteNodeFactory#HiLite Table"
+            },
+            {
+                "id":"org.knime.testing.internal.nodes.differ.DifferenceCheckerNodeFactory#Table Difference Checker",
+                "nrexecs":113,
+                "nrfails":82,
+                "exectime":1040,
+                "nrcreated":5,
+                "successor":"n/a"
+            },
+            {
+                "id":"msk.node.post.cluster.som.SOMNodeFactory#SOM",
+                "nrexecs":22,
+                "nrfails":9,
+                "exectime":49201,
+                "nrcreated":8,
+                "successor":"msk.node.viz.clusterViewer.ClusterViewerNodeFactory#Cluster Viewer"
+            },
+            {
+                "id":"org.knime.base.node.mine.cluster.kmeans.ClusterNodeFactory2#k-Means",
+                "nrexecs":29,
+                "nrfails":0,
+                "exectime":97170,
+                "nrcreated":7,
+                "successor":"org.knime.base.node.viz.table.TableNodeFactory#Interactive Table"
+            },
+            {
+                "id":"org.knime.base.node.preproc.domain.dialog2.DomainNodeFactory#Domain Calculator",
+                "nrexecs":89,
+                "nrfails":0,
+                "exectime":143,
+                "nrcreated":13,
+                "successor":"org.knime.base.node.viz.table.TableNodeFactory#Interactive Table"
+            },
+            {
+                "id":"msk.node.pre.spec.mzLimit.LimitMZNodeFactory#Limit m/z Range",
+                "nrexecs":17,
+                "nrfails":3,
+                "exectime":570,
+                "nrcreated":2,
+                "successor":"org.knime.base.node.preproc.filter.row.RowFilterNodeFactory#Row Filter"
+            },
+            {
+                "id":"msk.node.pre.spec.baseline.BaselineNodeFactory#Baseline Subtraction",
+                "nrexecs":5828,
+                "nrfails":2,
+                "exectime":57156,
+                "nrcreated":8,
+                "successor":"msk.node.pre.spec.smooth.SmootherNodeFactory#Smoother"
+            },
+            {
+                "id":"msk.node.pre.spec.rebin.RebinnerNodeFactory#Rebinner",
+                "nrexecs":5117,
+                "nrfails":0,
+                "exectime":145743,
+                "nrcreated":9,
+                "successor":"msk.node.pre.spec.smooth.SmootherNodeFactory#Smoother"
+            },
+            {
+                "id":"msk.node.pre.spec.roi.ROINodeFactory#ROI",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"msk.node.post.cluster.normCuts.NormalizedCutsNodeFactory#Normalized Cuts",
+                "nrexecs":48,
+                "nrfails":13,
+                "exectime":1522918,
+                "nrcreated":7,
+                "successor":"msk.node.viz.clusterViewer.ClusterViewerNodeFactory#Cluster Viewer"
+            },
+            {
+                "id":"org.knime.base.node.meta.looper.LoopEndNodeFactory#Loop End",
+                "nrexecs":6479,
+                "nrfails":3,
+                "exectime":92773,
+                "nrcreated":10,
+                "successor":"msk.node.viz.clusterViewer.ClusterViewerNodeFactory#Cluster Viewer"
+            },
+            {
+                "id":"msk.node.pre.spec.smooth.SmootherNodeFactory#Smoother",
+                "nrexecs":6128,
+                "nrfails":4,
+                "exectime":76541,
+                "nrcreated":8,
+                "successor":"msk.node.util.combiner.CombinerNodeFactory#Combine m/z and Intensity"
+            },
+            {
+                "id":"msk.node.viz.spectrum.single.SpectrumViewNodeFactory#Spectrum Visualizer",
+                "nrexecs":39,
+                "nrfails":6,
+                "exectime":93668,
+                "nrcreated":9,
+                "successor":"n/a"
+            },
+            {
+                "id":"msk.node.viz.spectrum.compare.SpectrumCmpViewNodeFactory#Spectrum Visualizer (Compare)",
+                "nrexecs":18,
+                "nrfails":2,
+                "exectime":15373,
+                "nrcreated":4,
+                "successor":"n/a"
+            },
+            {
+                "id":"msk.node.viz.image.MZViewerNodeFactory#m/z Channel Viewer",
+                "nrexecs":45,
+                "nrfails":6,
+                "exectime":119748,
+                "nrcreated":5,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.js.base.node.quickform.input.filechooser.FileChooserQuickFormNodeFactory#File Chooser",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.explorer.nodes.browser.ExplorerBrowserNodeFactory#Explorer Browser",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.image.readimage.ReadImageFromUrlNodeFactory#Read Images",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.util.createtempdir.CreateTempDirectoryNodeFactory#Create Temp Dir",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.preproc.filter.rowref.RowFilterRefNodeFactory#Reference Row Filter",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.viz.histogram.node.FixedColumnHistogramNodeFactory#Histogram",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"msk.node.viz.spectrum.jpeg.SpectrumJPEGNodeFactory#Spectrum JPEG",
+                "nrexecs":13,
+                "nrfails":0,
+                "exectime":5089,
+                "nrcreated":4,
+                "successor":"org.knime.base.node.preproc.filter.row.RowFilterNodeFactory#Row Filter"
+            },
+            {
+                "id":"org.knime.base.node.viz.hilite.AutoHiLiteNodeFactory#HiLite Table",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.viz.table.TableNodeFactory#Interactive Table"
+            },
+            {
+                "id":"msk.node.viz.clusterViewer.ClusterViewerNodeFactory#ClusterViewer",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":1040,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"msk.node.viz.clusterViewer.ClusterViewerNodeFactory#Cluster Viewer",
+                "nrexecs":112,
+                "nrfails":0,
+                "exectime":10276,
+                "nrcreated":11,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.mine.dbscan.DBSCANNodeFactory#DBSCAN",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":1639341,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.viz.table.TableNodeFactory#Interactive Table"
+            },
+            {
+                "id":"org.knime.distance.measure.numerical.NumericalDistanceNodeFactory#Numeric Distances",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":3,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.mine.dbscan.DBSCANNodeFactory#DBSCAN"
+            },
+            {
+                "id":"msk.node.pre.spec.roi.ROINodeFactory#Image ROI",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.preproc.filter.row.RowFilterNodeFactory#Row Filter",
+                "nrexecs":14,
+                "nrfails":0,
+                "exectime":809,
+                "nrcreated":4,
+                "successor":"msk.node.viz.spectrum.jpeg.SpectrumJPEGNodeFactory#Spectrum JPEG"
+            },
+            {
+                "id":"org.knime.base.node.preproc.filter.row.RowFilter2PortNodeFactory#Row Splitter",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":2,
+                "successor":"msk.node.viz.spectrum.jpeg.SpectrumJPEGNodeFactory#Spectrum JPEG"
+            },
+            {
+                "id":"msk.deprecated.node.read.imzML.loop.image.IonImageLoopStartNodeFactory#Ion Image Loop Start",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.jsnippet.JavaSnippetNodeFactory#Java Snippet",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.ext.sun.nodes.script.JavaScriptingNodeFactory#Java Snippet (simple)",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"msk.node.util.combiner.CombinerNodeFactory#Combine m/z and Intensity",
+                "nrexecs":3220,
+                "nrfails":0,
+                "exectime":173234,
+                "nrcreated":8,
+                "successor":"org.knime.base.node.mine.cluster.kmeans.ClusterNodeFactory2#k-Means"
+            },
+            {
+                "id":"org.knime.base.node.preproc.rowkey2.RowKeyNodeFactory2#RowID",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":61,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"msk.node.viz.spectrum.meanbp.MeanBasepeakSpectrumNodeFactory#Mean and Basepeak Spectrum",
+                "nrexecs":3,
+                "nrfails":3,
+                "exectime":10538,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.rules.engine.RuleEngineNodeFactory#Rule Engine"
+            },
+            {
+                "id":"org.knime.base.node.rules.engine.RuleEngineNodeFactory#Rule Engine",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":2,
+                "successor":"n/a"
+            },
+            {
+                "id":"msk.buildfakeimzml.BuildFakeImzMLNodeFactory#BuildFakeImzML",
+                "nrexecs":20,
+                "nrfails":0,
+                "exectime":5092,
+                "nrcreated":2,
+                "successor":"msk.node.viz.spectrum.compare.SpectrumCmpViewNodeFactory#Spectrum Visualizer (Compare)"
+            },
+            {
+                "id":"msk.node.post.cluster.normCuts.image.NormalizedCutsImageNodeFactory#Normalized Cuts Image",
+                "nrexecs":3,
+                "nrfails":1,
+                "exectime":2870,
+                "nrcreated":2,
+                "successor":"msk.node.post.cluster.som.SOMNodeFactory#SOM"
+            },
+            {
+                "id":"msk.node.read.imzML.loop.processed.ImzMLProcessedLoopStartNodeFactory#ImzML Processed Loop Start",
+                "nrexecs":315,
+                "nrfails":1,
+                "exectime":30655,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.meta.looper.LoopEnd2NodeFactory#Loop End (2 ports)"
+            }
+        ],
+        "metaNodes":{
+            "nrexecs":0,
+            "nrfails":0,
+            "exectime":0,
+            "nrcreated":0
+        },
+        "wrappedNodes":{
+        }
+    },
+    "uptime":53564970,
+    "workflowsOpened":66,
+    "remoteWorkflowsOpened":0,
+    "launches":55,
+    "timeSinceLastStart":2350974,
+    "crashes":1,
+    "properlyShutDown":true
+}

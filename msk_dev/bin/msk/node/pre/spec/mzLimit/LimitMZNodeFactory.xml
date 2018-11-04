@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./msk_logo-1.png" type="Manipulator" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd"> 
+    <name>Limit m/z Range</name>   
+    
+    <shortDescription>
+   		Use this node to limit the m/z values in a range between a user specified minimum and maximum.
+    </shortDescription>     
+    <fullDescription>
+        <intro>
+        	We use this node to simply limit the m/z range between a user specified minimum and maximum.
+        	We look at the incoming m/z values, and limit the output depending on these.
+        	If the minimum and maximum are outside of the range of the actual data, then we output empty tables.
+        	We then limit the intensity values depending on their corresponding m/z values.
+        	Requires the dataset to be continuous/processed such that m/z values are equal (eg Rebinned).
+        </intro>      
+            
+        <tab name="Limits on m/z">
+            <option name="Minimum">
+            	Specify the minimum m/z value to be found in the output tables, 
+            </option>
+           	<option name="Maximum">
+           		Specify the maximum m/z value to be found in the output tables.
+           	</option>
+        </tab>
+    </fullDescription>
+
+    <ports>
+        <inPort index="0" name="m/z Data">
+			 The m/z values of spectra as rows of a DataTable.
+		</inPort>
+		<inPort index="1" name="Intensity Data">
+			The intensity values of spectra to the corresponding m/z inputs.
+		</inPort>
+		
+        <outPort index="0" name="Range Limited m/z Data">
+        	The incoming m/z spectra values that fit in the range specified in the dialog.
+        </outPort>
+        <outPort index="1" name="Range Limited Intensity Data">
+        	The incoming intensity spectra values that fit in the range specified in the dialog.
+        </outPort>      
+    </ports>    
+</knimeNode>

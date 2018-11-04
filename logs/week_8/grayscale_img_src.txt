@@ -1,0 +1,3 @@
+Great dataset of grayscale images.
+
+http://decsai.ugr.es/cvg/CG/base.htm

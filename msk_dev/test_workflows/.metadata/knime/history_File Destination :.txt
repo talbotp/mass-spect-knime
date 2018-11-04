@@ -1,0 +1,8 @@
+/Users/parker/Downloads
+/Users/parker/work/report_generated_images/Mass_Spectrometry_Imaging
+/Users/parker/work/report_generated_images
+/Users/parker/work/report_generated_images/mean_basepeak
+
+/Users/parker/work/report_generated_images/rebin
+/Users/parker/work/report_generated_images/(1,1)
+/Users/parker/work/report_generated_images/rebin/(1,1)

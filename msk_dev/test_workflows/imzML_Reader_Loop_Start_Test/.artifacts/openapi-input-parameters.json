@@ -1,0 +1,12 @@
+
+{
+    "type":"object",
+    "properties":{
+        "imzml_file_continuous_with_ibd-3":{
+            "type":"string",
+            "default":"/Users/parker/work/imzMLPracticeDatasets/example_files/Example_Continuous.imzML",
+            "description":"A valid imzML file with the ibd location in the same directory.\n\nNB : There are 9 spectra and 8999 m/z channels.",
+            "example":"/Users/parker/work/imzMLPracticeDatasets/example_files/Example_Continuous.imzML"
+        }
+    }
+}

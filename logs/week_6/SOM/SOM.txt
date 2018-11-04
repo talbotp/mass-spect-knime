@@ -1,0 +1,7 @@
+SOM USEFUL INFO :
+
+SOM Explained :
+http://davis.wpi.edu/~matt/courses/soms/
+
+SOM Library : 
+http://java-ml.sourceforge.net/api/0.1.5/net/sf/javaml/clustering/SOM.html

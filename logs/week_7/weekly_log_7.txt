@@ -1,0 +1,10 @@
+Andrew P Talbot 1434667
+
+Weekly Log 7 : Week commencing 30th July 2018
+
+	- Have spent some time working on the implementation of N Cuts algorithm, and dedicated some time to Java Native Interface trying to get ToMaTo to work, have had trouble with both of these.
+
+	- Worked on some Unit tests for the logic in the Nodes.
+
+	
+Meetings are now less scheduled and are more random in their timeframes, so i will no longer add a next meeting line in the weekly logs.

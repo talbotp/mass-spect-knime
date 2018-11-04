@@ -1,0 +1,8 @@
+/Users/parker/work/imzMLPracticeDatasets/example_files/s042_continuous/S042_Continuous.imzML
+/Users/parker/work
+/Users/parker/work/imzMLPracticeDatasets/example_files/Example_Processed.imzML
+/Users/parker/work/imzMLPracticeDatasets/s042_continuous-1/S042_Continuous.imzML
+imgay.imzML
+/Users/parker/work/imzMLPracticeDatasets/example_files/NotImzml.imz
+/Users/parker/work/imzMLPracticeDatasets/example_files/Example_Continuous.imzML
+/Users/parker/work/imzMLDatasets/full2014_11_12_fullpattern_nomatrix(141112,15h57m)_16.327, 6.628, 39.180, 40.161, 22.853, 0.200, 1_1.imzML

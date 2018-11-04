@@ -1,0 +1,5 @@
+Andrew P Talbot 1434667
+
+Weekly Log 7 : Week commencing 9th August 2018
+
+	- Have finally gotten somewhere while working on the n cuts algorithm, now need to get the lanczos algorithm working and get the algorithm working for when we choose to use the n cut partitioning method, as it works best when we work with median and zero partitions. 

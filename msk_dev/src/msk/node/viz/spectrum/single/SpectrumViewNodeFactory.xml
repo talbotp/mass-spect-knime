@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./msk_logo-1.png" type="Visualizer" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>Spectrum Visualizer</name>
+    
+    <shortDescription>
+        This node allows for a single spectra intensity to be plotted against m/z onto a single chart.
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>
+			  This node allows for a single spectra intensity to be plotted against m/z onto a single chart.
+		</intro>
+		
+		<option name="x Pixel">
+			Specify the x pixel of the spectra to be plotted. If outside the bounds of the minimum or maximum pixel, the closest is chosen.
+		</option>
+		<option name="y Pixel">
+			Specify the y pixel of the spectra to be plotted. If outside the bounds of the minimum or maximum pixel, the closest is chosen.
+		</option>
+		<option name="Save the JPEG">
+			Specify whether the JPEG should be saved or not.
+		</option>
+		<option name="File Destination">
+			Specify the location to save the JPEG of the spectra.
+		</option>
+    </fullDescription>
+    
+	<ports>
+        <inPort index="0" name="Combined m/z and Intensity Data">
+       		The incoming data should contain rows of intensities of the spectra.
+       		The data should be combined so that the rows of the data are the intensities for a single spectra.
+       		The column names are the m/z channels.
+        </inPort>
+    </ports> 
+    
+     <views>
+    	<view index="1" name="m/z Channel View">
+    		Visualization of the intensity plotted against the m/z values.
+    	</view>
+    </views>
+</knimeNode>

@@ -1,0 +1,29 @@
+Andrew P Talbot 1434667
+
+Weekly Log 3: Week commencing Monday 2nd July 2018
+
+This Week:
+
+	As was suggested in the last meeting, I have been designing these nodes with a smaller use, i.e. each node does ONE thing, then it can link with other nodes in order to add more features. This is making the node design SIGNIFICANTLY easier.
+
+	The first attempt that I showed in the first meeting, I am now considering this to be a throwaway prototype. But I am utilising a similar package structure. Just implementing some of the methods in a more logical way.
+
+	Goals:
+	- fully implement all reader nodes.
+	- fully implement limit m/z and roi nodes.
+	- catalogue and document the following methods for the next Tuesday meeting:
+		+ rebinning of spectra
+		+ savitzky-golay smoothing
+		+ some form of normalization? How will i interface this with the other nodes
+	
+	Done: 
+    - all reader nodes implemented, and partially documented.
+    - ROI node is completed
+    - have been cataloguing and documenting methods for rebinning, smoothing, still need to figure out normalisation.
+
+	Challenges:
+	- how can i interface the normalisation method? I am finding that very confusing.
+
+	Next Week goals:
+    - Will see most at new meeting on tuesday.
+    - finish all work with knime will be the plan if i can get loads done next week.

@@ -1,0 +1,21 @@
+Andrew P Talbot 1434667
+
+Weekly Log 1: Week commencing Monday 18th June 2018
+
+This week:
+
+	I have spent the first week learning the basics about the project, this included reading the following papers:
+		- msIQuant − Quantitation Software for Mass Spectrometry Imaging
+			Enabling Fast Access, Visualization, and Analysis of Large Data Sets
+		- SpectralAnalysis: Software for the Masses
+		- Persistence-Based Clustering in Riemannian Manifolds
+	
+	I also found and began reading a couple more papers on topology and clustering. These can be found in /week_1/papers in the git repository.
+	
+	I started looking into the noding guidelines, and the devlopment guide for KNIME, and started writing a node which computes the mean of each row for a dataset. This is yet to be completed, and it may not be worth finishing as next weeks task is to create a KNIME node for real.
+
+
+Next Week Goals:
+
+	I am going to be given a dataset and an imzML parser which I can then use to create an imzML reader node so that we can load imzML into KNIME.
+	I am going to document the software process and structure of the work that I will be creating.

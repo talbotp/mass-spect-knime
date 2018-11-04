@@ -1,0 +1,25 @@
+Potential questions: 
+
+0) ASK QUESTIONS ABOUT PROJECT PROPOSAL, in particular timings of the project and what are the actual achievements to aim for each part of the project.
+
+1) Lots of emphasis on talking about being able to handle large datasets. How do we handle this? As of yet no talk as to how they handle this. - just read that they use binning or cutting
+
+- spectrum mode and imaging mode, store both in a seperate file so they can be used simultaneously.
+- openMSI uses chunking of data to accelerate the access of selective data, ie it processes specific parts at a time, the other parts are then stored, and processed later/before.
+- data reduced and then stored so that it can be accessed quickly.
+- look at one spectrum at a time (this requires around 1-2 MB of memory as opposed to the 10s of GB for the whole dataset
+)
+
+2) Use of scala? Is it possible?
+
+3) Data formats? 
+
+- imzML data?
+- i basically want to make msiQuant which allows the user to choose their workflow or follow a more traditional GUI based approach as it allready does.
+
+4) SOLID Principles should be followed for Extensible software development.
+
+5) The widely accepted order for preprocessing time-of-flight (TOF) data is smoothing or denoising followed by baseline correction prior to peak detection. WHY? (specifically why is this the accepted ordering.)
+
+6) Next week after the meeting I must set a list of goals and Achieved Tasks.
+

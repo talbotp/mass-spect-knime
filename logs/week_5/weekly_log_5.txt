@@ -1,0 +1,25 @@
+Andrew P Talbot 1434667
+
+Weekly Log 4 : Week commencing 16 July 2018
+
+Next Meeting : Tuesday 19th July 2018: 9:30
+
+	This Week:
+
+	Goals:
+	- Implement viewing of single spectra and single images within KNIME.
+	- Do the topological persistence tutorial.
+	- Read all the papers sent to me in the meeting.
+
+	Done:
+	- Implemented viewing of spectra.
+	- topological data analysis tutorial completed. 
+	- read 4 papers provided on topological persistence.
+
+	Challenges:
+	- Imglib2 was challenging to programme.
+	- Need to Work on this.
+
+	Next Week goals:
+	- Implement clustering techniques talked about in todays meeting
+	- Start to compare clustering techniques.
