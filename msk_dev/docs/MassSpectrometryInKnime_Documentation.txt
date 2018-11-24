@@ -1,8 +1,0 @@
-This folder will contain the documentation for the project.
-
-Currently, it is all stored in a Google doc with the following link :
-
-	https://docs.google.com/document/d/1qubH8Fj5ZBY_dTpSzsnP7bkGbMytSwhDUNBJUgyGnJ4/edit?usp=sharing
-	
-	
-I aim to move the documentation into this folder as time goes by. But for now it is in the google doc.

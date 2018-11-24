@@ -143,6 +143,6 @@
    	  	<node
    	  		category-path="Mass_Spectrometry_Nodes/deprecated"
    	  		deprecated="false"
-   	  		factory-class="msk.buildfakeimzml.BuildFakeImzMLNodeFactory"/>
+   	  		factory-class="msk.deprecated.node.buildfakeimzml.BuildFakeImzMLNodeFactory"/>
   	</extension> 
 </plugin>

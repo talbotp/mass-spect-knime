@@ -1,0 +1,11 @@
+# ignore storage of academic papers used.
+logs/papers/
+
+# ignore binaries
+msk_dev/bin/
+
+# ignore data
+msk_dev/data/
+
+# ignore libraries
+msk_dev/lib/

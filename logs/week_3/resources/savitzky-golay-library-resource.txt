@@ -1,3 +1,0 @@
-https://www.ee.ucl.ac.uk/~mflanaga/java/index.html
-
-FOR flanagan.jar for savitzky-golay filtering library.
